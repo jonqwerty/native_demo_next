@@ -5,7 +5,7 @@
  * @format
  */
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import type {PropsWithChildren} from 'react';
 import {
   SafeAreaView,
@@ -24,6 +24,7 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
+import {activate, reportEvent} from './modules/metrica/src';
 
 type SectionProps = PropsWithChildren<{
   title: string;
@@ -61,6 +62,18 @@ function App(): React.JSX.Element {
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
+  useEffect(() => {
+    activate('7878778878787877');
+    reportEvent('hello');
+  }, []);
+
+  // const onPress = useCallback(() => {
+  //   reportEvent('click on section one', {
+  //     fromPlatform: Platform.OS,
+  //     isNative: true,
+  //   });
+  // }, []);
 
   return (
     <SafeAreaView style={backgroundStyle}>
