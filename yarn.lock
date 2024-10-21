@@ -7071,6 +7071,7 @@ __metadata:
     react: 18.3.1
     react-native: 0.75.4
     react-native-metrica: "link:./modules/metrica"
+    react-native-qoi: "link:./modules/qoi"
     react-test-renderer: 18.3.1
     typescript: 5.0.4
   languageName: unknown
@@ -7760,6 +7761,12 @@ __metadata:
 "react-native-metrica@link:./modules/metrica::locator=native_demo_next%40workspace%3A.":
   version: 0.0.0-use.local
   resolution: "react-native-metrica@link:./modules/metrica::locator=native_demo_next%40workspace%3A."
+  languageName: node
+  linkType: soft
+
+"react-native-qoi@link:./modules/qoi::locator=native_demo_next%40workspace%3A.":
+  version: 0.0.0-use.local
+  resolution: "react-native-qoi@link:./modules/qoi::locator=native_demo_next%40workspace%3A."
   languageName: node
   linkType: soft
 
